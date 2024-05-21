@@ -94,3 +94,41 @@ footer {
     font-size: 14px;
     color: #888;
 }
+
+.honor-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.honor-table th, .honor-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.honor-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.honor-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.honor-table tr:hover {
+    background-color: #ddd;
+}
+
+.honor-table a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.honor-table a:hover {
+    text-decoration: underline;
+}
+
+h1{
+    color: #404f63;
+    text-align: left;
+
+}

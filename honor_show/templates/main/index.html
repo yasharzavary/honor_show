@@ -1,7 +1,48 @@
 {% extends 'maintemplate.html' %}
 
 {% block content %}
-  <h1 style="color:red;text-align:center;">This is main page</h1>
+  <h1 >My diploma's honor list:</h1>
+
+  <table class="honor-table">
+    <thead>
+        <tr>
+            <th>Link</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td><a href="{% url 'will_make' %}">galamchi</a></td>
+            <td>First Honor Description</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="{% url 'will_make' %}">kounkur</a></td>
+            <td>Second Honor Description</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="{% url 'will_make' %}">math_competition</a></td>
+            <td>Third Honor Description</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="{% url 'will_make' %}">sampad_exam</a></td>
+            <td>Fourth Honor Description</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="{% url 'will_make' %}">sampad_exam2</a></td>
+            <td>Fifth Honor Description</td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'all_in_one' %}"></a></td>
+        </tr>
+    </tbody>
+</table>
+
+
 
 {% endblock %}
 
