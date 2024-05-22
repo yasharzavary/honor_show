@@ -26,4 +26,5 @@ urlpatterns = [
     path('all_in_one', include('apps.all_in_one.urls')),
     path('contact', include('apps.contact.urls')),
     path('about', include('apps.about.urls')),
+    path('come_soon', include('apps.coming_soon.urls'))
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
