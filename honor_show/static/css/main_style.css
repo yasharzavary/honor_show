@@ -189,4 +189,53 @@ button:hover {
     background-color: #555;
 }
 
+/* static/myapp/css/styles.css */
+
+/* About Page Styles */
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.about-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.about-text h2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.about-text a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.about-text a:hover {
+    text-decoration: underline;
+}
 
