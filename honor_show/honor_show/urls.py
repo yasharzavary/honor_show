@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('apps.main.urls')),
     path('will_make', include('apps.will_make.urls')),
     path('all_in_one', include('apps.all_in_one.urls')),
+    path('contact', include('apps.contact.urls')),
 ]
