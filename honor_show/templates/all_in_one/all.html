@@ -5,7 +5,7 @@
 <div class="trophies-container">
     {% for trophy in trophies %}
     <div class="trophy-card">
-        <img src="{{ trophy.image_path }}" alt="{{ trophy.name }}">
+        <img src="{{media_url}}images/honors/{{trophy.image_path}}" alt="{{ trophy.name }}">
         <div class="trophy-details">
             <h2>{{ trophy.name }}</h2>
             <p><strong>When:</strong> {{ trophy.where_get }}</p>
