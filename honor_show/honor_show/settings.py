@@ -77,12 +77,14 @@ WSGI_APPLICATION = 'honor_show.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'ENGINE': 'mysql.connector.django',
-    'NAME': 'honor_show',
-    'USER': 'root',
-    'HOST': 'localhost',
-    'PASSWORD': 'Yasharzavary360',
-    'PORT': '3306',
+    'default':{
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'honor_show',
+        'USER': 'root',
+        'HOST': 'localhost',
+        'PASSWORD': 'Yasharzavary360',
+        'PORT': '3306',
+    }
 }
 
 
