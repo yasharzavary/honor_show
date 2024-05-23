@@ -234,3 +234,42 @@ button:hover {
 .about-text a:hover {
     text-decoration: underline;
 }
+
+/* Trophies Page Styles */
+.trophies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.trophy-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.trophy-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.trophy-details h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.trophy-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
