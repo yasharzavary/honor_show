@@ -1,5 +1,8 @@
 from django.shortcuts import render
-
+from apps.one_image.models import image
 
 def all(req):
-    return render(req, 'all_in_one/all.html')
+    context = {
+        'trophies': image.objects.all(),
+    }
+    return render(req, 'all_in_one/all.html', context)
