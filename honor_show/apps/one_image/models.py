@@ -15,7 +15,7 @@ class Institute(models.Model):
         verbose_name_plural = 'سازمان ها'
     name = models.CharField(max_length=30)
     slug = models.SlugField()
-    build_date = models.DateTimeField()
+    build_date = models.DateTimeField(blank=True)
     work_goal = models.CharField(max_length=40)
     description = models.TextField() 
     
@@ -32,7 +32,7 @@ class Person(models.Model):
     slug = models.SlugField()
     age = models.IntegerField(blank=True, null=False, verbose_name='سن')
     email = models.EmailField(max_length=100, blank=True, null=False, verbose_name='ایمیل')
-    institute = models.IntegerField()
+    institute = models.ForeignKey(Institute, blank=False, null=True, verbose_name='از طرف', on_delete = models.SET_NULL)
     DEGREES = [
         ('under-diploma', 'زیر دیپلم'),
         ('diploma', 'دیپلم'),

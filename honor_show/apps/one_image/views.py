@@ -7,10 +7,6 @@ def index(req):
     pass
 
 
-
-
-
-
 def all(req):
     context = {
         'trophies': Honor.objects.all(),
